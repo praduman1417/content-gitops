@@ -14,7 +14,7 @@ jobs:
     - shell: bash
       env:
        SUPER_SECRET: ${{ secrets.DOCKERPW }}
-      run: ehco "$SUPER_SECRET"
+      run: echo "$SUPER_SECRET"
     - uses: actions/checkout@v1
     - name: Set up Python 3.7
       uses: actions/setup-python@v1
